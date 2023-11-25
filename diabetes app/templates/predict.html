@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html><body>
+    <!-- Result -->
+		<div class="results">
+			{% if prediction==1 %}
+				<h1>Prediction: <span class='danger'>Opps! You have DIABETES.</span></h1>
+				
+			{% elif prediction==0 %}
+				<h1>Prediction: <span class='safe'>Hurrah !!! You DON'T have diabetes.</span></h1>
+				
+			{% endif %}
+		</div>
+		<footer>Made with flask framework by Engimedics</footer>
+</body></html>

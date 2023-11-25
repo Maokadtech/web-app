@@ -1,0 +1,60 @@
+<html>
+<head>
+<style>
+.button {
+background-color: red;
+	border: 2px solid whitesmoke;
+	color: whitesmoke;
+	padding: 0.5em 0.5em;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1em;
+	display: inline-block;
+	width: 80%;
+	border-radius: 5px;
+	box-shadow: 3px 3px 8px 0 #000; 
+}
+body {
+  background-color: black;
+  background-repeat: no-repeat;
+ background-size: 100% 100%;
+}
+h1{
+   background-color: Green;
+  color: white;
+}
+h3{
+   background-color: red;
+  color: white;
+}
+
+
+</style>
+</head>
+<body>
+<center>
+
+    
+<h1>DIABETES PREDICTION WEB APP</h1>
+<pre>
+	<form action="{{ url_for('predict')}}"method="post">
+
+                <input class="form-input" type="text" name="pregnancies" placeholder="Number of Pregnancies"><br>
+                <input class="form-input" type="text" name="glucose" placeholder="Glucose (mg/dL)"><br>
+                <input class="form-input" type="text" name="bloodpressure" placeholder="Blood Pressure (mmHg)"><br>
+                <input class="form-input" type="text" name="skinthickness" placeholder="Skin Thickness (mm)"><br>
+                <input class="form-input" type="text" name="insulin" placeholder="Insulin Level (IU/mL)"><br>
+                <input class="form-input" type="text" name="bmi" placeholder="Body Mass Index (kg/m²)"><br>
+                <input class="form-input" type="text" name="dpf" placeholder="Diabetes Pedigree Function "><br>
+                <input class="form-input" type="text" name="age" placeholder="Age (years)"> 
+
+
+
+
+<button type="submit" class="button">RESULT</button>
+</form>
+<footer>Made with flask by Samad ayomide musa</footer>
+</pre>
+</center>
+</body>
+</html>
